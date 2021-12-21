@@ -27,6 +27,6 @@ public class Student {
     @ManyToOne
     private Group group;
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.LAZY)
     private List<Subject> subjectList;
 }

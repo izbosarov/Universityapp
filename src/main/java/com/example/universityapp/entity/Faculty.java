@@ -17,7 +17,7 @@ public class Faculty {
 
     private String name;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     private University university;
 
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "uuid2")

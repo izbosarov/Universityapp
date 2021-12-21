@@ -18,7 +18,7 @@ public class Group {
     @Column(length = 3, unique = true)
     private String name;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     private Faculty faculty;
 
 }
